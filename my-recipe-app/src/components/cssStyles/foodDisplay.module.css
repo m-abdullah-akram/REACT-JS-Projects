@@ -1,0 +1,14 @@
+.mainDirectory {
+    display: grid;
+    /* 50% width and centered */
+    /* width: 50%; */
+    /* Columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Rows */
+    grid-auto-rows: 1fr; /* all rows equal height */
+
+    /* gap: 20px; */
+    row-gap: 20px;      /* space between rows */
+    column-gap: 40px;   /* space between columns */
+    padding: 20px;
+}

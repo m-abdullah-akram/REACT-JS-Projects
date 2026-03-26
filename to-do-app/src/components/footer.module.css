@@ -1,0 +1,24 @@
+.mainFoot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f3e763;
+}
+
+.total{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.completed{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}

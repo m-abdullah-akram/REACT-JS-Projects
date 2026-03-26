@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    background-color: #000;
+    color: #ffd000;
+
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(255, 208, 0, 0.4);
+}
+
+/* Logo / Title */
+.logo {
+    font-size: 1.8rem;
+}
+
+/* Navigation links container */
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+/* Individual link */
+.link {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.link:hover {
+    color: #fff;
+    transform: scale(1.1);
+}

@@ -1,0 +1,52 @@
+.recipeCard {
+    margin-top: 5px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.recipeCard button {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+}
+
+.recipeCard button:hover {
+    background-color: #e68900;
+}
+
+.instructions {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.instructions-title {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.instructions-list {
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.instructions-item {
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.instructions-item:hover {
+  color: #000;
+}
