@@ -1,0 +1,406 @@
+:root {
+    --brand-primary: #FC8019;
+    --brand-dark: #E86F10;
+    --section-bg: #FC8019;
+
+    --text-on-primary: #000000;
+    --section-header: #2F3645;
+    --subtext: #6B7280;
+
+    --offer-text: #FF5200;
+
+    --input-bg: #FFE7D6;
+    --placeholder: #8A8F98;
+    --input-border: #F2B38B;
+
+    --surface-card :#F2B38B;
+
+    --sign-in: #000000;
+    --button-color: #000000;
+    --button-color-light: #464040;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Make root a column flex container so footer can sit at the bottom */
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: var(--section-bg);
+    color: var(--section-header);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 90px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: var(--text-on-primary);
+}
+
+header > img {
+    width: 75px;
+}
+
+header > h1 {
+    font-weight: 700;
+}
+header > h1 > span {
+    font-weight: 400;
+}
+
+main {
+    padding: 40px 60px;
+    flex: 1 1 auto; /* allow main to grow and push footer to bottom */
+}
+
+.add-ingredient-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.add-ingredient-form > input {
+    border-radius: 14px;
+    border: 1px solid var(--input-border);
+    padding: 14px 16px;
+    background: var(--input-bg);
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.add-ingredient-form > input::placeholder {
+    color: var(--placeholder);
+}
+
+.add-ingredient-form > input:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 2px rgba(252, 128, 25, 0.2);
+}
+
+.add-ingredient-form > button {
+    border-radius: 14px;
+    border: none;
+    background: var(--button-color);
+    color: #fff;
+    padding: 14px 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-ingredient-form > button:hover {
+    background: var(--button-color-light);
+}
+
+ul.ingredients-list {
+    /* margin: 30px auto; */
+    max-width: 600px;
+}
+
+ul.ingredients-list > li {
+    color: var(--section-header);
+    line-height: 28px;
+}
+
+.get-recipe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    background: var(--input-bg);
+    padding: 18px 24px;
+    margin-top: 30px;
+    border: 1px solid var(--input-border);
+}
+
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--section-header);
+}
+
+.get-recipe-container p {
+    color: var(--subtext);
+    font-size: 0.875rem;
+}
+
+.get-recipe-container button {
+    border: none;
+    border-radius: 999px;
+    background: var(--button-color);
+    color: #fff;
+    padding: 10px 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.get-recipe-container button:hover {
+    background: var(--button-color-light);
+}
+
+.get-recipe-container button:disabled {
+    background: #f5c2a3;
+    cursor: not-allowed;
+}
+
+.suggested-recipe-container {
+    margin-top: 20px;
+    background: var(--input-bg);:root {
+    /* Core Brand Colors */
+    --brand-primary: #FC8019; /* Main Orange Background */
+    --brand-dark-orange: #E86F10;
+    --brand-deep: #FF5200;
+
+    /* Surfaces (replacing white-heavy UI) */
+    --surface-1: #FFF3E6;  /* light warm cream */
+    --surface-2: #FFE6CC;  /* deeper warm background */
+    --surface-card: #FFF1E0; /* soft card background */
+
+    /* Text */
+    --text-primary: #2B2D31;
+    --text-muted: #6B7280;
+    --text-on-primary: #FFFFFF;
+
+    /* Inputs */
+    --input-bg: #FFF7ED;
+    --placeholder: #9CA3AF;
+    --input-border: #F2C6A0;
+
+    /* Actions */
+    --action-dark: #000000;
+}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: var(--brand-primary); /* strong orange base */
+    color: var(--text-primary);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+    background: transparent;
+    color: var(--text-on-primary);
+}
+
+/* MAIN */
+main {
+    padding: 40px 60px;
+}
+
+/* INPUT FORM */
+.add-ingredient-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* INPUT (warm soft, not white) */
+.add-ingredient-form > input {
+    border-radius: 14px;
+    border: 1px solid var(--input-border);
+    padding: 14px 16px;
+    background: var(--input-bg);
+    flex-grow: 1;
+    max-width: 520px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    color: var(--text-primary);
+}
+
+.add-ingredient-form > input::placeholder {
+    color: var(--placeholder);
+}
+
+.add-ingredient-form > input:focus {
+    outline: none;
+    border-color: var(--brand-deep);
+    box-shadow: 0 0 0 3px rgba(255, 82, 0, 0.2);
+}
+
+/* BUTTON */
+.add-ingredient-form > button {
+    border-radius: 14px;
+    border: none;
+    background: var(--button-color);
+    color: #fff;
+    padding: 14px 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.add-ingredient-form > button:hover {
+    background: var(--button-color-light);
+}
+
+
+/* CARD AREA (NO PURE WHITE) */
+.get-recipe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    background: var(--surface-card);
+    padding: 18px 24px;
+    margin-top: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    border: 1px solid rgba(255, 128, 25, 0.2);
+}
+
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.get-recipe-container p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+/* CTA */
+.get-recipe-container button {
+    border: none;
+    border-radius: 999px;
+    background: var(--button-color);
+    color: #fff;
+    padding: 10px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 6px 16px rgba(252, 128, 25, 0.35);
+}
+
+.get-recipe-container button:hover {
+    background: var(--button-color-light);
+}
+
+/* DISABLED */
+.get-recipe-container button:disabled {
+    background: var(--button-color-light);
+    cursor: not-allowed;
+}
+
+/* RECIPE OUTPUT */
+.suggested-recipe-container {
+    margin-top: 20px;
+    background: var(--surface-card);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 128, 25, 0.15);
+}
+
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
+
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
+
+.footer {
+    background: var(--surface-1);
+    border-top: 1px solid var(--input-border);
+    padding: 30px 20px;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-brand img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.footer-brand span {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    max-width: 420px;
+    line-height: 1.5;
+}
+.laster-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.footer-line {
+    width: 60px;
+    height: 2px;
+    background: var(--brand-primary);
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+.footer-credit {
+    font-size: 0.85rem;
+    color: black;
+}
+
+.footer-credit a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-credit a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    color: white;
+}
