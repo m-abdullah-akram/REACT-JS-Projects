@@ -38,7 +38,7 @@ Instead of searching recipes manually, users simply enter the ingredients they h
 
 - **Frontend:** React.js
 - **AI Integration:** Google Gemini API
-- **Styling:** CSS / Tailwind CSS (if used)
+- **Styling:** CSS (if used)
 - **State Management:** React Hooks (useState, useEffect)
 
 ---
